@@ -1,0 +1,39 @@
+# Concurrent Course Registration System in C
+
+> Multi-threaded course registration simulation in C, using POSIX threads to handle contested seats safely.
+
+Author: Muhammad Tanveer (Full-Stack AI Automation Engineer)
+Contact: mtanveertahir66@gmail.com | https://www.linkedin.com/in/muhammad-tanveer-advenno/
+Repository: https://github.com/haddindeve/concurrent-course-registration-c
+Source availability: implementation held in a private repository; access on request.
+
+## Summary
+Course registration is a textbook concurrency problem: many students contend for a limited number of seats at once. Without correct synchronisation a course is overfilled, and the bug only appears under load.
+
+A POSIX threads simulation where each student is a thread contending for shared seat state. Access is guarded so the seat count cannot be read and written unsafely, making overfilling impossible rather than merely unlikely.
+
+## Stack
+Language: C, Concurrency: POSIX threads (pthreads), Synchronisation: Mutexes over shared seat state, Build: Makefile
+
+## Capabilities
+- Thread-per-student concurrency model
+- Mutex-protected seat allocation
+- Race condition prevention under contention
+- Reproducible concurrent simulation
+
+## Outcomes
+- Seat limits hold under concurrent contention
+- Demonstrates the failure mode and the synchronisation that removes it
+
+## FAQ
+Q: What concurrency problem does this show?
+A: Lost updates on shared state - two threads reading the same seat count and both writing back, overfilling the course.
+
+Q: How is it prevented?
+A: The read-modify-write on seat state happens inside a mutex-guarded critical section, so it is atomic with respect to other threads.
+
+Q: Why C and pthreads?
+A: They expose the synchronisation primitives directly, with no runtime hiding the mechanics.
+
+Q: Is the source available?
+A: Private repository.

@@ -1,0 +1,158 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://github.com/haddindeve#person",
+      "name": "Muhammad Tanveer",
+      "jobTitle": "Full-Stack AI Automation Engineer",
+      "email": "mailto:mtanveertahir66@gmail.com",
+      "url": "https://github.com/haddindeve",
+      "sameAs": [
+        "https://www.linkedin.com/in/muhammad-tanveer-advenno/",
+        "https://github.com/haddindeve"
+      ],
+      "description": "Full-stack AI automation engineer. I build agentic systems, browser and workflow automation, RAG pipelines and the production web platforms they run on - from Rust and Python services to Next.js dashboards and PHP/MySQL business systems.",
+      "knowsAbout": [
+        "3D food model menu",
+        "AI assistant routing",
+        "AI content generation",
+        "AI operating system",
+        "AI posture analysis",
+        "AI research agent",
+        "AI sales agent",
+        "AI video generation",
+        "AI-native ERP",
+        "AR restaurant menu",
+        "ATM electronic journal parser",
+        "B2B export catalogue",
+        "B2B lead generation AI",
+        "EJ log parsing",
+        "GL reconciliation",
+        "Google Maps ranking automation",
+        "IoT analytics dashboard",
+        "LinkedIn lead generation",
+        "NFC access control",
+        "POSIX threads C",
+        "Playwright browser automation",
+        "Rust accounting engine",
+        "SEO content automation",
+        "WhatsApp AI agent",
+        "agency management platform",
+        "algorithmic trading Python",
+        "augmented reality menu",
+        "automated lead generation",
+        "automated trading dashboard",
+        "automated video pipeline",
+        "biometric identity verification",
+        "client portal",
+        "concurrent programming",
+        "constraint satisfaction problem",
+        "corrective exercise platform",
+        "crypto trading bot",
+        "cycle tracking app",
+        "document OCR software",
+        "e-passport chip reading",
+        "eMRTD verification",
+        "employee portal",
+        "exporter buyer discovery",
+        "fabric shop software",
+        "face anti-spoofing",
+        "fitness CRM",
+        "gym management software",
+        "industrial IoT monitoring",
+        "inventory management POS",
+        "lead enrichment pipeline",
+        "liveness detection",
+        "local SEO automation",
+        "multi-branch accounting software",
+        "musculoskeletal assessment software",
+        "natural language search leads",
+        "offline-first PWA",
+        "order management system",
+        "orthopaedic casting stockinette",
+        "presentation attack detection",
+        "privacy-first mobile app",
+        "product catalogue CMS",
+        "prospect research automation",
+        "restaurant POS system",
+        "retail POS system",
+        "retail automation",
+        "scanned document processing",
+        "shortest path algorithm",
+        "smart manufacturing platform",
+        "social media automation",
+        "stockinette supplier",
+        "surgical instruments manufacturer website",
+        "table extraction AI",
+        "thread synchronisation",
+        "topical authority",
+        "tubular stockinette manufacturer",
+        "women's health app"
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Concurrent Course Registration System in C",
+      "description": "Multi-threaded course registration simulation in C, using POSIX threads to handle contested seats safely.",
+      "codeRepository": "https://github.com/haddindeve/concurrent-course-registration-c",
+      "author": {
+        "@id": "https://github.com/haddindeve#person"
+      },
+      "creator": {
+        "@id": "https://github.com/haddindeve#person"
+      },
+      "programmingLanguage": [
+        "C",
+        "POSIX threads (pthreads)",
+        "Mutexes over shared seat state",
+        "Makefile"
+      ],
+      "keywords": [
+        "POSIX threads C",
+        "concurrent programming",
+        "thread synchronisation",
+        "race condition prevention",
+        "mutex semaphore",
+        "operating systems project"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What concurrency problem does this show?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lost updates on shared state - two threads reading the same seat count and both writing back, overfilling the course."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is it prevented?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The read-modify-write on seat state happens inside a mutex-guarded critical section, so it is atomic with respect to other threads."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why C and pthreads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They expose the synchronisation primitives directly, with no runtime hiding the mechanics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the source available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Private repository."
+          }
+        }
+      ]
+    }
+  ]
+}
